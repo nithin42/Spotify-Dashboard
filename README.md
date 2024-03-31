@@ -27,8 +27,7 @@ This Spotify data dashboard provides comprehensive insights into music trends sp
       3) Average stream Per year = 
             CALCULATE(
                 AVERAGE('updated_file'[streams]),
-                ALLEXCEPT('updated_file','Date'[Year])
-                
+                ALLEXCEPT('updated_file','Date'[Year]) 
             )
       4) top song vs avg = 
              VAR x =[top song vs avg val] RETURN
